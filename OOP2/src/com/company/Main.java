@@ -11,9 +11,7 @@ public class Main {
 
         PC thePc = new PC(theCase, theMonitor, theMotherboard);
 
-        thePc.getTheCase().pressPowerButton();
-        thePc.getTheMotherbaord().loadProgram("Super Mario");
-        thePc.getTheMonitor().drawPixelAt(5,1,"brick red");
+        thePc.powerUp(); //accessing private method
 
     }
 }
