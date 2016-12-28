@@ -32,6 +32,8 @@ public class Main {
             System.out.println(array[i]);
         }
 
+        System.out.println("The average is " + getAverage(array));
+
     }
 
     //Dealing with user input
@@ -43,5 +45,14 @@ public class Main {
             values[i] = scanner.nextInt();
         }
         return values;
+    }
+
+    public static double getAverage(int[] arr) {
+        int sum = 0;
+
+        for (int i =0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum/arr.length;
     }
 }
